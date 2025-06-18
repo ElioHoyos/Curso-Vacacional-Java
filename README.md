@@ -1,6 +1,5 @@
 # Programación Orientada a Objetos (POO): Conceptos Clave en Java
 # SENATI
-###
 ### (![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUkkUzrgcUkVMHMt3isZ0Cn8i2sCLkpwIZyg&s))
 #
 # INGENIERIA DE SOFTWARE CON IA
