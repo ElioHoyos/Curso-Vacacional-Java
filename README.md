@@ -1,52 +1,98 @@
-🚀 Programación Orientada a Objetos (POO): Conceptos Clave en Java
-📚 Curso Vacacional de Java - desde las bases
-🧠 Introducción a POO
-Los principales conceptos de Programación Orientada a Objetos que cubriremos:
+🚀 Programación Orientada a Objetos en Java - Curso SENATI
+https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUkkUzrgcUkVMHMt3isZ0Cn8i2sCLkpwIZyg&s
 
-Clase y Objetos: Modelado de entidades del mundo real
+📚 Introducción al Proyecto
+Este repositorio contiene material educativo sobre Programación Orientada a Objetos (POO) en Java, desarrollado como parte del curso vacacional de Java en SENATI. El proyecto demuestra conceptos fundamentales de POO mediante ejemplos prácticos y ejercicios interactivos.
 
-Herencia: Creación de jerarquías de clases
+🎯 Conceptos Clave Cubiertos
+Fundamentos de POO: Clases, objetos, encapsulamiento
 
-Polimorfismo: Comportamiento adaptable de objetos
+Relaciones entre clases: Herencia, composición, asociación
 
-Abstracción: Ocultamiento de detalles complejos
+Modificadores de acceso: private, protected, public, default
 
-💻 Introducción a Java Swing
-Creación de interfaces gráficas de usuario (GUI) con:
+Polimorfismo y Abstracción: Interfaces y clases abstractas
 
-Ventanas (JFrame)
+Desarrollo de GUI: Introducción a Java Swing
 
-Componentes (JButton, JTextField, etc.)
+� Estructura del Proyecto
+📁 src/
+├── 📁 uno/             # Paquete principal con clases base
+│   ├── ClaseA.java     # Demuestra modificadores de acceso
+│   └── ClaseB.java     # Acceso desde mismo paquete
+├── 📁 dos/             # Paquete secundario para herencia
+│   ├── ClaseC.java     # Herencia entre paquetes
+│   └── ClaseD.java     # Acceso mediante relaciones
+├── 📁 prueba/          # Casos de prueba
+│   ├── prueba01.java   # Prueba ClaseA
+│   ├── prueba02.java   # Prueba ClaseB
+│   ├── prueba03.java   # Prueba ClaseC
+│   └── prueba04.java   # Prueba ClaseD
+└── 📁 view/            # Ejemplos de interfaces gráficas
+    └── PedidoView.java # Formulario Swing interactivo
+classDiagram
+    direction LR
+    
+    class ClaseA {
+        -int n1
+        ~int n2
+        #int n3
+        +int n4
+        +ClaseA()
+        +metodoA()
+    }
+    
+    class ClaseB {
+        +metodoB()
+    }
+    
+    class ClaseC {
+        +metodoC()
+    }
+    
+    class ClaseD {
+        +metodoD()
+    }
+    
+    ClaseA <|-- ClaseC : Herencia
+    ClaseB --> ClaseA : Usa
+    ClaseC --> ClaseA : Usa
+    ClaseD --> ClaseA : Usa
+    
+    note "ClaseC accede a n3 (protected) mediante herencia"
+    note "ClaseD solo puede acceder a n4 (public)"
+    🖥️ Interfaz Gráfica - Java Swing
+https://via.placeholder.com/600x400/2c3e50/ffffff?text=Formulario+Interactivo+Java+Swing
+Ejemplo de formulario para gestión de pedidos
 
-Manejo de eventos
+⚙️ Cómo Ejecutar el Proyecto
+git clone https://github.com/tu-usuario/poo-java-senati.git
+Importar proyecto en NetBeans/Eclipse como proyecto Java existente
 
-Diseño de formularios interactivos
+Ejecutar los casos de prueba:
 
-<div align="center"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUkkUzrgcUkVMHMt3isZ0Cn8i2sCLkpwIZyg&s" alt="SENATI" width="200">
-INGENIERÍA DE SOFTWARE CON IA
-<img src="https://img.icons8.com/3d-fluency/94/java-coffee-cup-logo.png" alt="Java Logo"> </div>
-🔍 Estructura del Repositorio
-El proyecto contiene ejemplos prácticos de:
+prueba01.java: Demuestra acceso completo dentro de la misma clase
 
-Modificadores de acceso en Java
+prueba04.java: Muestra acceso limitado desde otro paquete
 
-Implementación de herencia entre paquetes
+Para la interfaz gráfica:
 
-Casos de prueba para validar acceso a miembros de clase
+Ejecutar PedidoView.java desde el paquete view
 
-Ejemplos de encapsulamiento y abstracción
+📋 Resultados Esperados
+Caso de Prueba	Output Esperado
+prueba01	n1=20, n2=30, n3=40, n4=50
+prueba02	n2=30, n3=40, n4=50
+prueba03	n3=40, n4=50
+prueba04	n4=50
+🛠️ Tecnologías Utilizadas
+Lenguaje: Java 11+
 
-💡 Cómo Usar
-Clona el repositorio
+IDE: NetBeans / Eclipse
 
-Importa el proyecto en NetBeans/Eclipse
+Gestión de dependencias: Maven
 
-Ejecuta los diferentes casos de prueba:
+Control de versiones: Git
 
-prueba01.java
-
-prueba02.java
-
-prueba03.java
-
-prueba04.java
+Documentación: Markdown + Mermaid
