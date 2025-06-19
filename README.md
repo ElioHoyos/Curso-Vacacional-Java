@@ -1,6 +1,6 @@
 🚀 Programación Orientada a Objetos en Java - Curso SENATI
-https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUkkUzrgcUkVMHMt3isZ0Cn8i2sCLkpwIZyg&s
+![image](https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png)
+![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUkkUzrgcUkVMHMt3isZ0Cn8i2sCLkpwIZyg&s)
 
 📚 Introducción al Proyecto
 Este repositorio contiene material educativo sobre Programación Orientada a Objetos (POO) en Java, desarrollado como parte del curso vacacional de Java en SENATI. El proyecto demuestra conceptos fundamentales de POO mediante ejemplos prácticos y ejercicios interactivos.
