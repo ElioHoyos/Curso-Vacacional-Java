@@ -3,6 +3,7 @@ package com.example.system_inventory.service.impl;
 import com.example.system_inventory.dto.CategoryDto;
 import com.example.system_inventory.dto.request.CategoryRequestDto;
 import com.example.system_inventory.entity.Category;
+import com.example.system_inventory.repository.CategoryRepository;
 import com.example.system_inventory.service.CategoryService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -14,6 +15,11 @@ import java.util.Optional;
 @Service
 public class CategoryServiceImpl implements CategoryService {
 
+    private final CategoryRepository categoryRepository;
+
+    public CategoryServiceImpl(CategoryRepository categoryRepository) {
+        this.categoryRepository = categoryRepository;
+    }
 
     @Override
     public Page<CategoryDto> getCategories(Pageable pageable) {
